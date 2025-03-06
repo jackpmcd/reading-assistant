@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidepanel-style.css">
+    <title>Output</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="dropdown">
+            <button id="dropdownBtn">
+                <img src="images/color-palette.svg" alt="Dropdown Icon" id="palette">
+            </button>
+            <div id="colorDropdown">
+                <div class="colorButtons" id="white">White</div>
+                <div class="colorButtons" id="rgba(32, 33, 36, 1.00)">Black</div>
+                <div class="colorButtons" id="#EDD1B0">Peach</div>
+                <div class="colorButtons" id="yellow">Yellow</div>
+                <div class="colorButtons" id="orange">Orange</div>
+              </div>
+        </div>
+
+        <div id="fontControls">
+            <button id="increaseFont" class="fontButtons">A+</button>
+            <button id="decreaseFont" class="fontButtons">A-</button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main id="mainContent">
+        <a href="sidepanel.html" id="sidepanelBtn">Home</a>
+
+        <h1 id="title">Content loading please wait...</h1>
+
+        <div id="output"></div>
+    </main>
+    
+    <script src="sidepanel.js"></script>
+    <script src="summary.js"></script> <!-- Load the JavaScript file for handling summary display -->
+    
+</body>
+</html>

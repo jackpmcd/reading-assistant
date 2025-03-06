@@ -1,0 +1,28 @@
+.question-group.active {
+    display: block;
+}
+
+.question-group{
+    display: none;
+}
+
+#prevAndNextBtns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navButtons{
+    background-color: transparent;
+    color: black;
+    border: solid 2px black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message{
+    font-size: 20px;
+    color:white;
+}
+

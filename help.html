@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidepanel-style.css">
+    <title>Help</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="dropdown">
+            <button id="dropdownBtn">
+                <img src="images/color-palette.svg" alt="Dropdown Icon" id="palette">
+            </button>
+            <div id="colorDropdown">
+                <div class="colorButtons" id="white">White</div>
+                <div class="colorButtons" id="rgba(32, 33, 36, 1.00)">Black</div>
+                <div class="colorButtons" id="#EDD1B0">Peach</div>
+                <div class="colorButtons" id="yellow">Yellow</div>
+                <div class="colorButtons" id="orange">Orange</div>
+              </div>
+        </div>
+
+        <div id="fontControls">
+            <button id="increaseFont" class="fontButtons">A+</button>
+            <button id="decreaseFont" class="fontButtons">A-</button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main id="mainContent">
+        <a href="sidepanel.html" id="sidepanelBtn">Home</a>
+
+        <h1 id="title">Help</h1>
+
+        <div id="FAQ">
+            <div class="question">
+                <h2>How do I get a summary of the webpage I'm looking at?</h2>
+                <p>Click on the reading assistant button that appears on the webpage, then select "Summary" and a summary of the entire article/page will appear after a few seconds</p>
+            </div>
+
+            <div class="question">
+                <h2>How does the summary/quiz work?</h2>
+                <p>Using the gpt-3.5-turbo-0125 API, the website's writing is combined with some careful prompt engineering to create the output you see on the quiz and summary pages</p>
+            </div>
+
+            <div class="question">
+                <h2>How do I change the color of the website?</h2>
+                <p>Click on the down arrow underneath the "Reading Assistant" button on the webpage. Click on the color palette icon, then select the color you want from the dropdown menu</p>
+            </div>
+    </main>
+    
+    <script src="sidepanel.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+.buttons{
+    border: 2px solid;
+    width: 50%;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+  
+.buttons:hover, .buttons:focus{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+  
+.actionButton{
+    background-color: #AF54F6;
+    color: white;
+    border-radius: 10px;
+}
+  
+#buttonContainer{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+#title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#mainContent{
+    padding:20px;
+}
+
+body{
+    margin: 0;
+}
+
+.fontButtons{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header hr{
+    height: 20px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+.colorButtons {
+    background: none;
+    border: solid 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+  
+.dropdown img {
+    width: 20px; 
+    height: 20px;
+}
+
+#colorDropdown{
+    display: none;
+}
+
+#dropdownBtn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#sidepanelBtn{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 3px 6px 3px 6px;
+}

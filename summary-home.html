@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>PDF Reading Assistant - Summary</title>
+    <link rel="stylesheet" href="sidepanel-style.css">
+</head>
+<body>
+    <header>
+
+        <div class="dropdown">
+            <button id="dropdownBtn">
+                <img src="images/color-palette.svg" alt="Dropdown Icon" id="palette">
+            </button>
+            <div id="colorDropdown">
+                <div class="colorButtons" id="white">White</div>
+                <div class="colorButtons" id="rgba(32, 33, 36, 1.00)">Black</div>
+                <div class="colorButtons" id="#EDD1B0">Peach</div>
+                <div class="colorButtons" id="yellow">Yellow</div>
+                <div class="colorButtons" id="orange">Orange</div>
+              </div>
+        </div>
+
+        <div id="fontControls">
+            <button id="increaseFont" class="fontButtons">A+</button>
+            <button id="decreaseFont" class="fontButtons">A-</button>
+        </div>
+    </header>
+
+    <hr>
+    
+    <main id="mainContent">
+        <div id="title">
+            <h1>Summary</h1>
+        </div>
+        
+        <div>
+            <div id="summaryOptions" class="buttons">
+                <h2>Summary</h2>
+                <form>
+                    <input type="radio" id="whole_thing" name="length_choice" value="whole-thing">
+                    <label for="whole_thing">Whole thing</label><br>
+                    <input type="radio" id="custom" name="length_choice" value="custom">
+                    <label for="custom">Custom</label><br>
+                    <div id="rangeBoxes" hidden>
+                        <input type="number" id="min-val" placeholder="From">
+                        <input type="number" id="max-val" placeholder="To">
+                    </div>
+                    <input type="submit" value="Summarise">
+                </form>
+
+                <a href="summarised.html">go to summary for whole-thing</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="summary.js"></script>
+    <script src="sidepanel.js"></script>
+</body>
+</html>

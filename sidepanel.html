@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>PDF Reading Assistant - Home</title>
+    <link rel="stylesheet" href="sidepanel-style.css">
+</head>
+<body>
+    <header>
+
+        <div class="dropdown">
+            <button id="dropdownBtn">
+                <img src="images/color-palette.svg" alt="Dropdown Icon" id="palette">
+            </button>
+            <div id="colorDropdown">
+                <div class="colorButtons" id="white">White</div>
+                <div class="colorButtons" id="rgba(32, 33, 36, 1.00)">Black</div>
+                <div class="colorButtons" id="#EDD1B0">Peach</div>
+                <div class="colorButtons" id="yellow">Yellow</div>
+                <div class="colorButtons" id="orange">Orange</div>
+              </div>
+        </div>
+
+        <div id="fontControls">
+            <button id="increaseFont" class="fontButtons">A+</button>
+            <button id="decreaseFont" class="fontButtons">A-</button>
+        </div>
+    </header>
+
+    <hr>
+    
+    <main id="mainContent">
+        <a href="sidepanel.html" id="sidepanelBtn" style="display:none">Home</a>
+        <div id="title">
+            <h1>Reading Assistant</h1>
+        </div>
+
+        <div id="buttonContainer">
+            <div id="openQuiz">
+                <h2 id="quiz" class="buttons" tabindex="0">Quiz Me!</h2>
+            </div>
+
+            <div id="openSummary">
+                <h2 id="summary" class="buttons" tabindex="0">Summary</h2>
+            </div>
+
+            <div id="openHelp">
+                <h2 id="help" class="buttons" tabindex="0">Help</h2>
+            </div>
+        </div>
+    </main>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3, 
+    "name": "PDF Overlay Extension",
+    "version": "1.0.0",
+    "description": "Enhancing e-reading through different methods",
+    "content_scripts": [
+      {
+        "matches": [
+            "<all_urls>"
+          ],
+        "js": ["content-script.js"],
+        "css": ["stylesheet.css"]
+      }
+    ],
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    },
+    "permissions": ["sidePanel", "storage", "tabs", "scripting"],
+    "background": {
+      "service_worker": "background.js",
+      "scripts": "build/pdf.js"
+    },
+    "action": {},
+    "web_accessible_resources": [{"resources": ["build/pdf.js", "images/arrow.svg", "images/color-palette.svg"],
+                                  "matches": ["<all_urls>"]}]
+  }

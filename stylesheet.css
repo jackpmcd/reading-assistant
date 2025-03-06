@@ -1,0 +1,169 @@
+#myButton {
+  padding: 4px 20px; 
+  background-color: #AF54F6; 
+  color: white;
+  border: none;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 0;
+  font-family: sans-serif;
+}
+
+#myButton:hover{
+  background-color: #6F3F6F;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  z-index: 9999;
+  top: 100px; 
+  right: 0;
+  border-radius: 5px; 
+  height: 70px;
+  width: 200px;
+}
+
+#assistantContainer {
+  display: flex; 
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;  
+  z-index: 9999;
+  top: 100px; 
+  right: 0;
+  border-radius: 5px; 
+  height: 200px;
+}
+
+#downArrowContainer{
+  margin: 0; 
+  width: 100%;
+  height: 20px;
+  background-color: #c579ff;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+#dropdownArrow {
+  width: auto;
+  height: 90%;
+  rotate: 270deg;
+}
+
+#arrowContainer{
+  display: flex;
+  justify-content: center;
+  background-color: #c579ff;
+  height: 50px;
+  width: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#arrowContainer:hover{
+  background-color: #6F3F6F;
+}
+
+#arrow{
+  rotate: 180deg;
+  width: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.arrow-flipped { 
+  transform: rotate(180deg); 
+}
+
+.arrowDown {
+  margin: 5px auto; /* Center the arrow */
+}
+
+#tooltip {
+  position: absolute;
+  bottom: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#stylePanel{
+  align-content: center;
+  padding-top:20px;
+  background-color: #AF54F6;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px white;
+}
+
+#stylePanel h2{
+  font-size: 18px;
+}
+
+.font-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.size-btn{
+  background-color: #AF54F6;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#stylePanel h3{
+  margin-bottom: 3px;
+}
+
+#palette{
+  filter: invert(1);
+  width: 25px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#colorDropdown{
+  display:flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#colorDropdown:not(.black){
+  color: black;
+}
+
+#colorDropdown .black{
+  color: rgba(224, 228, 219, 1.00);
+}
+
+.colorButtons{
+  margin-top:3px;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.option-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
