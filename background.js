@@ -1,5 +1,3 @@
-const apiKey = "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";
-
 console.log("background js running")
 
 function loadPDF(url) {
