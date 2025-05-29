@@ -104,7 +104,7 @@ function applyColor(selectedColor) {
 
 colorButtons.forEach(function(button) {
   button.addEventListener('click', function(event) {
-    const selectedColor = this.id; // Assuming `this` refers to the clicked button
+    const selectedColor = this.id;
     applyColor(selectedColor);
 
     localStorage.setItem('selectedColor', selectedColor);
