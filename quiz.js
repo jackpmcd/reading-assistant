@@ -29,49 +29,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 });
 
-/* function convertToHTML(inputText) {
-    if (!inputText) {
-        return ''; 
-    }
-
-    const sections = inputText.split('#Q:');
-    sections.shift(); 
-
-    let html = '';
-
-    let counter = 0;
-    sections.forEach(section => {
-        counter++;
-        const lines = section.trim().split('#');
-        const question = lines[0].trim();
-        const answers = lines.map(line => line.trim()).filter(line => line.startsWith('A:') || line.startsWith('R:'));
-        const correctAnswer = answers.find(answer => answer.startsWith('R:'));
-    
-        html += `<div class="question-group" id=group${counter}>`;
-        html += `<h2>${question}</h2>`;
-        html += '<div class="answer-group">';
-    
-        answers.forEach(answer => {
-            const isCorrect = answer === correctAnswer;
-            const answerText = answer.replace(/^(R:|C:)/, '').trim();
-            const answerId = `answer_${Math.random().toString(36).substr(2, 9)}`;
-            html += `
-                <input type="radio" class="answers ${isCorrect ? 'right' : ''}" id="${answerId}" name="quiz" value="${answerText}">
-                <label for="${answerId}" class="answers">${answerText}</label><br>
-            `;
-        });
-    
-        html += '</div>';
-        html += '</div>';
-    });
-
-    return [html, counter];
-} */
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+      [array[i], array[j]] = [array[j], array[i]]; 
     }
     return array;
   }
@@ -136,14 +97,14 @@ function showGroup(index, numOfGroups) {
         messageDiv.textContent = '';
 
         if (index === 0) {
-            prevBtn.textContent = ''; // Hide prev button text for the first group
+            prevBtn.textContent = ''; 
             prevBtn.style.cursor = 'default';
         } else {
             prevBtn.textContent = 'Prev';
         }
 
         if (index === numOfGroups - 1) {
-            nextBtn.textContent = 'Finish'; // Change next button text to "Finish" for the last group
+            nextBtn.textContent = 'Finish'; 
         } else {
             nextBtn.textContent = 'Next';
         }
